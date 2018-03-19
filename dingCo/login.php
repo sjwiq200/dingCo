@@ -16,15 +16,20 @@ $result = mysqli_query($conn,$sql);
 
 $row = mysqli_fetch_array($result);
 
-//echo $row['password'];
+
 session_start();
 if($_POST['password'] == $row['password']){
 
 $_SESSION['user_id'] = $_POST['userId'];
+
 header('Location:../index.php');
+
 }else{
-header('Location:../index.php');
-echo "<script>alert('failed');</script>";
+
+//header('Location:../index.php');
+echo "<script>alert('failed');
+    window.location.href='../index.php';
+    </script>";
 }
 mysqli_free_result($result);
 mysqli_close($conn);

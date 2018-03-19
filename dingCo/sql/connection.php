@@ -7,8 +7,8 @@
  */
 
 function mysqlConnection(){
-//    $conn = mysqli_connect('localhost', 'root', 'root','test','8889');
-    $conn = mysqli_connect('localhost', 'sjwiq200', '55tlswldud','sjwiq200','3306');
+    $conn = mysqli_connect('localhost', 'root', 'root','test','8889');
+//    $conn = mysqli_connect('localhost', 'sjwiq200', '55tlswldud','sjwiq200','3306');
     return $conn;
 }
 ?>

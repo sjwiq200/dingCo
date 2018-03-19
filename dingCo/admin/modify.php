@@ -1,6 +1,4 @@
-<?php
 
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -79,16 +77,22 @@
 
 <body>
 
+<?php
+include_once '../layout/toolbar.php';
+?>
+
 
 <div class="container">
     <form id="modify" class="col-md-10">
         <textarea id="summernote" name="editordata"></textarea>
     </form>
+
+    <div class="row col-md-3 offset-md-3">
+        <button class="btn-default" >insert</button>
+    </div>
 </div>
 
-<div class="row col-md-3 offset-md-3">
-    <button class="btn-primary" >insert</button>
-</div>
+
 
 
 
